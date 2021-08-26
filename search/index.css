@@ -1,0 +1,221 @@
+body{
+    width: 100%;
+    min-width: 450px;
+    overflow: hidden;
+
+}
+body, input, button{
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #222;
+}
+
+
+.container-fluid{
+    min-width: 450px ;
+    padding:6px;
+    height: 60px;
+    align-content: center;
+    box-sizing: border-box;
+    
+
+}
+.container-fluid >.row{
+    margin-top: 10px;
+    
+}
+
+.container-fluid a{
+    margin: 0 5px 0 15px;
+    padding: 5px 5px; 
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    height: 50px;
+
+    
+}
+.container-fluid a:hover{
+    text-decoration: underline;
+}
+.empty{
+    height: 200px;
+    height: calc(100%-560px);
+    max-height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+#Gsearch {
+    padding:20px ;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+
+.gbox{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.searchbar{
+    width: 482px ;
+    max-width: 584px;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    outline: none;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    padding-left: 40px;
+    font-size: 16px;
+    
+}
+
+.searchbar:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+span{
+    position: relative;
+    fill: currentColor;
+    color: #9aa0a6; 
+}
+
+
+span::after{
+    display: inline-block;
+    content: "";
+    position:absolute;
+    align-items: center;
+    left: 16px;
+    top:16px;
+    bottom: 0px;
+    padding-right: 10px;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    color: #9aa0a6;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'  %3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+
+}
+.container{
+    /* border: black 1px solid; */
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    
+}
+.submit{
+    padding: 10px;   
+}
+.submit>input{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.submit>input:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+.searchbar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+}
+.blank{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: bisque;
+}   
+@media only screen and (max-width:885px){
+    #footer{
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 470px;
+
+    }
+
+    div.order0 {
+        order: 0;
+    }
+}
+
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: auto; */
+    background:#f2f2f2;
+    flex: 1 1 100%;
+
+}
+.order1 a:hover, .order0 a:hover, .order3 a:hover{
+    text-decoration: underline;
+
+}
+.order1 {   
+    color: #70757a;
+    justify-content: flex-start;
+    text-decoration: none;
+    /* min-width: 30%; */
+    padding: 15px;
+    order: 1;
+    
+}
+.order0{
+    justify-content: flex-start;
+    padding: 15px;
+    order: 2;
+    
+}
+.order0 > img{
+    height: 15px;
+    order: 2;
+}
+.order3 {
+    padding: 15px;
+    order:3;
+}
+.order1 a, .order3 a{
+    padding: 0 20px;
+    
+}
+.order1 a, .order0 a, .order3 a{
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #222;
+    color: #70757a;
+    text-decoration: none;
+    /* min-width: 30%; */
+    /* border-right: 1px solid black; */
+}

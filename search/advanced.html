@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google advanced</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/advanced.css">
+    </head>
+    <body>
+        <!-- nav bar -->
+        <div id="container"> 
+            <div class="nav"><a href="/index.html">press me</a> </div>
+        </div>
+        <!-- RED ADVSearch -->
+        <div class="advs"><label>Advanced Search</label> </div>
+        <!-- bottm border -->
+        <div class="line"> </div>
+        <!-- search bars -->
+        <form action="https://google.com/search">
+
+            <div class="form-group">
+                <div class="form-col-1"><label> Find pages with...</label> </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-col-2">
+                  <label for="fname">all these words:</label>
+                </div>
+                <div class="form-col-3">
+                  <input type="text" name="as_q" id="fname" autocomplete="given-name">
+                </div>
+              </div>
+              <!-- <h1>fix flex-start for input so bars are position to left of text</h1> -->
+              <div class="form-group">
+                <div class="form-col-2">
+                  <label for="lname">This exact word or phrase:</label>
+                </div>
+                <div class="form-col-3">
+                  <input type="text" name="as_epq" id="lname" autocomplete="family-name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-col-2">
+                  <label for="lname">any of these words:</label>
+                </div>
+                <div class="form-col-3">
+                  <input type="text" name="as_oq" id="lname" autocomplete="family-name">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-col-2">
+                  <label for="lname">none of these words:</label>
+                </div>
+                <div class="form-col-3">
+                  <input type="text" name="as_eq" id="lname" autocomplete="family-name">
+                </div>
+              </div>
+              <div class="form-group1">
+                
+                  <div class="div-btn">
+
+                    <input class="btn-submit" type="submit" value="Advanced Search">
+                  </div>
+       
+              </div>
+              
+        </form>
+            <div id="footer">
+
+                <div class="footer-items">
+                  <a href="#">Help</a>
+                  <a href="#">Privacy</a>
+                  <a href="#">Terms</a>
+                </div>
+            </div>
+            
+    </body>
+</html>

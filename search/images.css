@@ -1,0 +1,224 @@
+body{
+    width: 100%;
+    min-width: 450px;
+    overflow: hidden;
+}
+
+
+.container-fluid{
+    min-width: 450px ;
+    padding:6px;
+    height: 60px;
+    align-content: center;
+    box-sizing: border-box;
+    
+
+}
+.container-fluid >.row{
+    margin-top: 10px;
+    
+}
+
+.container-fluid a{
+    margin: 0 10px 0 15px;
+    padding: 5px 5px; 
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    height: 50px;
+
+    
+}
+.container-fluid a:hover{
+    text-decoration: underline;
+}
+.empty{
+    height: 200px;
+    height: calc(100%-560px);
+    max-height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+/* div#Gsearch{
+    width: 534px;
+
+} */
+#Gsearch {
+    
+    padding:20px ;
+    width: 534px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+img.google{
+    margin-left: 62px;
+    
+}
+.gbox{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 92px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.searchbar{
+    width: 482px ;
+    max-width: 584px;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    outline: none;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    padding-left: 40px;
+    font-size: 16px;
+    
+}
+button.btn{
+    position: absolute;
+    top: 12px;
+    left: 426px;
+    width: 44px;
+    height: 20px;
+    content: "";
+
+
+}
+i.material-icons.b {
+    background: none;
+    fill: #4285f4;
+    cursor: pointer;
+    bottom: 8px;
+    color:#4285f4;
+    position: relative;
+}
+i.material-icons.c{
+    position: relative;
+    left: 402px;
+    color: #7d7e81ed;
+    cursor: pointer;
+    bottom: 33px;
+    
+}
+span{
+    user-select: none;
+    position: relative;
+    fill: currentColor;
+    columns: #9aa09a;
+}
+
+form >span::after{
+    display: inline-block;
+    content: "";
+    position:absolute;
+    align-items: center;
+    left: 16px;
+    top:16px;
+    bottom: 0px;
+    padding-right: 10px;
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    color: #4285f4;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'  %3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+
+}
+span.img{
+    font-size: 18px;
+    position: relative;
+    top: 38px;
+    right: 60px;
+    color: blue;
+}
+
+.searchbar:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+.container{
+    /* border: black 1px solid; */
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    
+}
+.searchbar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+}
+
+@media only screen and (max-width:885px){
+    div#footer{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        min-width: 470px;
+    }
+
+}
+
+#footer {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background:#f2f2f2
+
+    
+}
+
+
+#order1 a:hover,  #order3 a:hover{
+    text-decoration: underline;
+
+}
+div#order1 > a , div#order3 > a {   
+    color: #70757a;
+    text-decoration: none;
+    min-width: 30%;
+    padding: 15px;
+    order: 1;
+    
+}
+
+
+div#order3 {
+    
+    padding: 15px;
+    order:3;
+}
+div#order1, div#order3{
+    padding: 0 20px;
+    
+    
+
+}
+div#order1 a, div#order2 a, div#order3 a{
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #222;
+    color: #70757a;
+    text-decoration: none;
+    min-width: 30%;
+}
+
+
+
+
